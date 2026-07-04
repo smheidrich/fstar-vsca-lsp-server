@@ -6,27 +6,25 @@ Assistant][1] as a standalone package.
 
 ## Installation
 
-⚠️ Unfortunately, you can't just plug this into an LSP client and expect it to
-work as-is. You do, for now, need some special configuration owing to its
-origin as a component in a VS Code extension. Pay close attention to the
-**configuration section below this one** or you will get very confusing error
-messages.
+> [!IMPORTANT]
+> Unfortunately, you can't just plug this into an LSP client and expect it to
+> work as-is. You do, for now, need some special configuration owing to its
+> origin as a component in a VS Code extension. **Pay close attention to the
+> configuration section below this one** or you will get very confusing error
+> messages.
 
 The easiest way to make the server executable available to your editor is to
-install somewhere into your `$PATH`. I'm not really familiar with the JS/TS
-ecosystem, so as far as I'm concerned, it's done like this:
+install it somewhere into your `$PATH`. I'm not really familiar with the JS/TS
+ecosystem, so after consulting with an LLM, apparently it's done like this
+(assuming `~/.local/bin` is in your `$PATH`):
 
 ```bash
-npm install -g fstar-vsca-lsp-server
+npm install -g --prefix $HOME/.local/bin fstar-vsca-lsp-server
 ```
 
-or
-
-```bash
-npm install --user fstar-vsca-lsp-server
-```
-
-If you have some cool modern better way to do this, just use that instead.
+If you have some cool modern better way to do this (something equivalent to
+Python's `pipx install some-package` or `uv tool install some-package`), just
+use that instead.
 
 
 ## Configuring your editor
