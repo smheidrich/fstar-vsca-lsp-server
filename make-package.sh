@@ -21,10 +21,11 @@ for x in src/**/*.{ts,js}; do
   sed -i -E 's/console.(log|info)/console.error/g' "$x"
 done
 
-# We need to change the package name, add a prepare script to perform the
-# compilation with dev dependencies installed and then expose the compiled
-# script as an executable (jq lacks in-place editing support, hence the `jq ;
-# mv` thing):
+# We need to change the package name, version, ...,  add a prepare script to
+# perform the compilation with dev dependencies installed, and then expose the
+# compiled script as an executable (jq lacks in-place editing support, hence
+# the `jq ; mv` thing):
+export VERSION=0.1.0
 jq -f ../../package-json-filter.jq < package.json > package.json.tmp
 mv package.json.tmp package.json
 
