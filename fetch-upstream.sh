@@ -4,5 +4,5 @@
 git clone \
   --revision=53a0c6e63f8a6022e4640b054ccb7b61c910937e \
   https://github.com/FStarLang/fstar-vscode-assistant.git \
-  upstream
+  upstream/fstar-vscode-assistant
 # [1]: https://github.com/google/copybara/issues/269
