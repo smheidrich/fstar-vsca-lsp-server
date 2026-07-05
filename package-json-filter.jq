@@ -1,4 +1,4 @@
-.name |= "fstar-vsca-lsp-server" |
+.name |= "@smheidrich/fstar-vsca-lsp-server" |
 .description |= "LSP server extracted from fstar-vscode-assistant" |
 .version |= env.VERSION |
 .scripts.prepare |= "npm run compile" |
