@@ -19,7 +19,7 @@ ecosystem, so after consulting with an LLM, apparently it's done like this
 (assuming `~/.local/bin` is in your `$PATH`):
 
 ```bash
-npm install -g --prefix $HOME/.local/bin fstar-vsca-lsp-server
+npm install -g --prefix $HOME/.local/bin @smheidrich/fstar-vsca-lsp-server
 ```
 
 If you have some cool modern better way to do this (something equivalent to
