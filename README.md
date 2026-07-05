@@ -107,6 +107,18 @@ purpose (probably only works on Linux):
 
 This should put the modified package under `build/fstar-vsca-lsp-server/`.
 
+The package can then be published to npm like so:
+
+```bash
+cd build/fstar-vsca-lsp-server
+npm publish --access public
+```
+
+**NOTE:** I was going to set up trusted publishing, which would be especially
+important for an application package like this that only ships
+difficult-to-audit bundled code, but npm doesn't allow me to do that unless I
+buy a physical key thing for their 2FA, which I haven't done.
+
 
 [1]: https://github.com/FStarLang/fstar-vscode-assistant
 [2]: https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#workspace_configuration
