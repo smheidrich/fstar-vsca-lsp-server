@@ -81,11 +81,13 @@ so I won't be able to help you with it.
 
 ### Neovim
 
-Note that you first need a **filetype plugin** (e.g. [VimFStar][4], which comes
-with a very outdated Python extension that you should probably just remove)
-that detects F* files and sets their buffer's `filetype` to `fstar`.
+Because Neovim doesn't currently have [built-in detection][3] for F* files, you
+first need a **filetype-detection plugin** (e.g. the one that comes with
+[VimFStar][4], which unfortunately also installs a very outdated Python
+extension that you should probably just remove) that sets the **`filetype`** of
+F* file's buffers to **`fstar`**.
 
-Assuming you have that, here's a [nvim-lspconfig][3] configuration:
+Assuming you have that, here's a [nvim-lspconfig][5] configuration:
 
 ```lua
 vim.lsp.config('fstar-lsp', {
@@ -140,5 +142,6 @@ buy a physical key thing for their 2FA, which I haven't done.
 
 [1]: https://github.com/FStarLang/fstar-vscode-assistant
 [2]: https://microsoft.github.io/language-server-protocol/specifications/lsp/3.17/specification/#workspace_configuration
-[3]: https://github.com/neovim/nvim-lspconfig
+[3]: https://github.com/neovim/neovim/blob/8dfe4d662929d441c7eaaf444e79a4f9a2af0997/runtime/lua/vim/filetype.lua
 [4]: https://github.com/FStarLang/VimFStar
+[5]: https://github.com/neovim/nvim-lspconfig
