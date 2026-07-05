@@ -1,6 +1,6 @@
 # fstar-vsca-lsp-server
 
-This package contains the LSP server that's part of the [F* VS Code
+This package publishes the LSP server that's part of the [F* VS Code
 Assistant][1] as a standalone application, independently of the VS Code plugin.
 
 ## Features
