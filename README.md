@@ -3,6 +3,24 @@
 This package publishes the LSP server that's part of the [F* VS Code
 Assistant][1] as a standalone package.
 
+## Features
+
+While the LSP server only has a subset of the full plugin's features, it's
+probably still useful as a middle ground between it and no editor integration
+at all.
+
+So far, the features I've observed are:
+
+- ✅ Diagnostics
+- ✅ Go to definition
+- ✅ Hover
+
+While these are unsupported (non-exhaustive):
+
+- ❌ Find references
+- ❌ Signature help
+- ❌ Document symbols
+- ❌ Rename
 
 ## Installation
 
