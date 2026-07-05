@@ -98,11 +98,14 @@ the upstream [fstar-vscode-assistant][1] repository, which can be fetched via:
 ```
 
 However, it also needs makes some changes to this code before it can be
-published as a standalone package. This is done by the script TODO:
+published as a standalone package. This repo includes a script for this
+purpose (probably only works on Linux):
 
 ```bash
-./todo-script.sh
+./make-package.sh
 ```
+
+This should put the modified package under `build/fstar-vsca-lsp-server/`.
 
 
 [1]: https://github.com/FStarLang/fstar-vscode-assistant
