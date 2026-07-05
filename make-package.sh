@@ -12,8 +12,11 @@ mkdir -p build
 # Supposedly -T only works on Linux, not Mac OS. Too bad.
 cp -Tr upstream/fstar-vscode-assistant/lspserver/ build/fstar-vsca-lsp-server
 
-# We also need to copy the LICENSE file from the parent
-cp upstream/fstar-vscode-assistant/LICENSE build/fstar-vsca-lsp-server
+# We also need to copy the LICENSE file from the parent...
+cp upstream/fstar-vscode-assistant/LICENSE build/fstar-vsca-lsp-server/
+
+# ... and our own README
+cp README.md build/fstar-vsca-lsp-server/
 
 cd build/fstar-vsca-lsp-server
 

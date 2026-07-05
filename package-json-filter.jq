@@ -3,4 +3,5 @@
 .version |= env.VERSION |
 .scripts.prepare |= "npm run compile" |
 .bin |= {"fstar-vsca-lsp-server": "out/main.js"} |
-.repository.url |= "https://github.com/smheidrich/fstar-vsca-lsp-server"
+.repository.url |= "https://github.com/smheidrich/fstar-vsca-lsp-server" |
+.files |= ["out"]
